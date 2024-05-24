@@ -1,0 +1,271 @@
+
+:root {
+    --font-size-small: 0.75rem;
+    --font-size-base: 1rem;
+    --font-size-medium: 1.25rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+    --font-size-xxlarge: 2.5rem;
+    --font-size-xxxlarge: 3rem;
+    --font-size-huge: 3.5rem;
+    --font-size-xhuge: 4rem;
+    --font-size-xxhuge: 4.5rem;
+}
+
+h1 {
+    font-size: var(--font-size-huge);
+}
+
+h2 {
+    font-size: var(--font-size-xlarge);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+}
+
+h4 {
+    font-size: var(--font-size-base);
+}
+
+/* Wrapper for the h4 text */
+.footer-text-wrapper {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the div horizontally */
+    text-align: center; /* Center the text inside the div */
+    padding: 20px; /* Add some padding for better readability */
+}
+
+
+/* General Resets */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+  
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes up the full height */
+    overflow: auto; /* Allow scrolling */
+}
+
+body {
+    font-size: var(--font-size-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure the content starts from the top */
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+}
+
+header, footer {
+    width: 100%;
+    position: relative; /* Ensure they are part of the normal document flow */
+}
+
+.header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .client-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.main-content {
+    width: 90%; /* Adjust width as needed */
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between; /* Space between the columns */
+    align-items: flex-start; /* Align items at the start */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 5px 0; /* Optional padding for spacing */
+}
+
+/* Adjust individual columns if needed */
+.column {
+    flex: 1;
+    margin: 0 5px; /* Adjust spacing between columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align text inside columns */
+
+}
+
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+/* --------------------------------- */
+
+.full-width-section-container {
+    display: flex;
+
+    justify-content: center; /* Center the full-width section */
+    width: 75%; /* Full width of the page */
+}
+
+/* --------------------------------- */
+
+
+.full-width-section {
+
+
+    background: linear-gradient(circle, #c3ab221e 20%, rgba(13, 2, 23, 0.466), rgba(13, 2, 23, 0.466) 80%);
+    padding: 15px;
+    border-radius: 14px;
+    border: 5px solid #c4ff72ab; /* border for visibility */
+    width: 75%; 
+
+    align-items: center;
+    color: #ffeeb5f4;
+    margin: 10px auto;
+    box-shadow: 
+    0 1px 3px #d5ffb5,
+    inset 0 2px 4px rgba(133, 190, 255, 0.227),
+    inset 0 -3px 2px #000000ba; 
+}
+
+/* --------------------------------- */
+
+
+/* Adjust media queries for responsiveness */
+@media (max-width: 1300px) {
+    .columns-container {
+        flex-direction: column;
+        width: 100%; /* Full width for smaller screens */
+        align-items: center; /* Center align columns */
+
+    }
+    .column {
+        margin: 5px 0; /* Adjust spacing for smaller screens */
+        text-align: center; /* Center align text inside columns */
+
+    }
+
+    .full-width-section-container {
+
+        justify-content: center; /* Ensure full-width section is centered */
+    }
+
+    .full-width-section {
+
+        margin: 10px 0; /* Adjust spacing for smaller screens */
+        text-align: center; /* Center align text inside columns */
+        width: 500px; 
+        align-items: center; /* Center align columns */
+        text-align: center; /* Center align text inside columns */
+        justify-content: center; /* Ensure full-width section is centered */
+
+
+
+    }
+}
+
+/* Additional CSS for alignment and spacing */
+.gms-section, .gm-leaderboard-section, .accordion-section {
+    margin-bottom: 20px;
+}
+
+.gms-section h1, .gm-leaderboard-section h1, .accordion-section h1 {
+    margin: 0 0 10px;
+}
+
+.gms-section h3, .gm-leaderboard-section ul {
+    margin: 0;
+}
+
+.gradient-background {
+    background: linear-gradient(to top, #4caf50, #4caf50, #ffda6c);
+}
+
+.gradient-background2 {
+    background: linear-gradient(to bottom, #000000, #2f063c, #feb47b);
+}
+
+.gm-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #4caf50;
+    color: #ffeeb5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top left, #ffeeb51a, rgba(0, 0, 0, 0.212));
+    box-shadow: 
+        0 2px 4px rgba(135, 135, 135, 0.066), 
+        inset 0 1px 3px #ffeeb5be, 
+        inset 0 -2px 6px rgb(0, 0, 0);
+    text-shadow: 
+        0 0 8px rgba(255, 238, 181, 0.8), /* Glowing effect */
+        0 0 10px rgba(38, 38, 38, 0.766), /* Larger glow for softer edge */
+        0 0 4px rgb(35, 0, 75); /* Even larger glow for extended soft edge */
+    border: 1px solid #ffebba70; /* White border for visibility */
+    box-shadow: 
+        inset 0 1px 1px rgba(237, 207, 108, 0.505), /* Inset shadow */
+        0 0 8px rgba(247, 104, 255, 0.485), /* Outer glow effect */
+        0 0 10px rgba(0, 255, 0, 0.5); /* Additional outer glow for enhanced visibility */
+}
+
+.gn-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #020112;
+    color: #ffeeb5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #200426;
+    background-image: linear-gradient(to top left, #ffeeb51a, rgba(0, 0, 0, 0.212));
+    box-shadow: 
+        0 2px 4px rgba(135, 135, 135, 0.066), 
+        inset 0 1px 3px #ffeeb5be, 
+        inset 0 -2px 6px rgb(0, 0, 0);
+    text-shadow: 
+        0 0 8px rgba(255, 238, 181, 0.8), /* Glowing effect */
+        0 0 10px rgba(38, 38, 38, 0.766), /* Larger glow for softer edge */
+        0 0 4px rgb(35, 0, 75); /* Even larger glow for extended soft edge */
+    border: 1px solid #ffebba70; /* White border for visibility */
+    box-shadow: 
+        inset 0 1px 1px rgba(237, 207, 108, 0.505), /* Inset shadow */
+        0 0 8px rgba(247, 104, 255, 0.485), /* Outer glow effect */
+        0 0 10px rgba(0, 255, 0, 0.5); /* Additional outer glow for enhanced visibility */
+}
+
+#pageToggle1:checked + .toggle-label {
+    transform: translateX(26px);
+}
+
+#pageToggle2:checked + .toggle2-label::after {
+    transform: translateX(26px);
+}
+
